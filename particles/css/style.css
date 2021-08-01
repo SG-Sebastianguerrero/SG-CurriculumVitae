@@ -1,0 +1,129 @@
+*{
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+}
+
+:root{
+  --g-color: #f0eef1;
+  --orange-color: #c7a529;
+  --dg-color: #272731;
+}
+
+
+/* =============================================================================
+   PARTICLES
+   ========================================================================== */
+
+/* ---- base ---- */
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;           
+  background: var(--g-color);  
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /* New styles*/
+  display: block;
+  position: fixed;
+}
+
+
+/* =============================================================================
+   END PARTICLES
+   ========================================================================== */
+
+   /* =============================================================================
+   WEB PAGE STYLES
+   ========================================================================== */
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.navbar-logo{
+  height: 50px;
+}
+.hero{
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.text{
+  position: relative;
+  top: 45%;
+  transform: translate(0, -45%);
+  margin: 0;
+}
+
+.text h1:hover{
+  text-decoration: line-through;
+}
