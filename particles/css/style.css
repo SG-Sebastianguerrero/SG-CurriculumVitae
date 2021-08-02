@@ -107,6 +107,11 @@ header{
   z-index: 1;
   width: 100%;
 }
+
+h1, h2, h3, h4, h5, p{
+  font-family: telegraf,-apple-system,BlinkMacSystemFont,Segoe UI;
+}
+
 .navbar-logo{
   height: 50px;
 }
@@ -121,14 +126,33 @@ header{
   padding: 20%;
 }
 .text{
+
   position: relative;
   top: 45%;
   transform: translate(0, -45%);
   margin: 0;
   text-transform: uppercase;
 }
+.text h1{
+  font-size: 3.5rem;
+}
 
 .text h1:hover{
   text-decoration: line-through;
 }
 
+.logofolio{
+  padding: 40px;
+  align-self: center;
+  display: flex;
+}
+.carousel-text{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1 rem;
+  color:black;
+}
+.carousel-textwhite{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1 rem;
+  color:white;
+}
