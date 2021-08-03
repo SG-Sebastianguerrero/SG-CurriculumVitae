@@ -115,7 +115,16 @@ h1, h2, h3, h4, h5, p{
 .navbar-logo{
   height: 50px;
 }
-.hero, .aboutme, .logofolio{
+.navbarNavAltMarkup{
+  justify-content: flex-end!important;
+}
+.navbar-brand, .navbar-nav{
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow:  15px 15px 48px #afafaf,
+              -15px -15px 48px #ffffff;
+}
+.hero, .projects, .logofolio{
   text-align: center;
   width: 100%;
   justify-content: center;
@@ -126,7 +135,6 @@ h1, h2, h3, h4, h5, p{
   padding: 20%;
 }
 .text{
-
   position: relative;
   top: 45%;
   transform: translate(0, -45%);
@@ -142,7 +150,9 @@ h1, h2, h3, h4, h5, p{
 }
 
 .logofolio{
-  padding: 40px;
+  background: rgba(23,23,23, 0.9);
+  padding-left: 50px;
+  padding-right: 50px;
   align-self: center;
   display: flex;
 }
@@ -151,8 +161,19 @@ h1, h2, h3, h4, h5, p{
   font-size: 1 rem;
   color:black;
 }
-.carousel-textwhite{
+.text-white{
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1 rem;
   color:white;
+}
+.text-grey{
+  color: var(--dg-color);
+}
+.logofolio-organizer h1, .projects h1{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px;
+
 }
