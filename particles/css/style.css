@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, p{
 }
 
 .logofolio{
-  background: rgba(23,23,23, 0.9);
+  /* background: rgba(23,23,23, 0.9); */
   padding-left: 50px;
   padding-right: 50px;
   align-self: center;
