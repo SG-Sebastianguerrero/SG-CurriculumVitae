@@ -13,6 +13,7 @@
   --g-color: #f0eef1;
   --orange-color: #c7a529;
   --dg-color: #272731;
+
 }
 
 
@@ -131,49 +132,103 @@ h1, h2, h3, h4, h5, p{
   height: 100vh;
   position: relative;
 }
-.aboutme h4{
-  padding: 20%;
-}
-.text{
-  position: relative;
-  top: 45%;
-  transform: translate(0, -45%);
-  margin: 0;
-  text-transform: uppercase;
-}
-.text h1{
-  font-size: 3.5rem;
-}
-
 .text h1:hover{
   text-decoration: line-through;
 }
-
-.logofolio{
-  /* background: rgba(23,23,23, 0.9); */
-  padding-left: 50px;
-  padding-right: 50px;
-  align-self: center;
-  display: flex;
-}
-.carousel-text{
+.carousel-text, .text-white{
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1 rem;
   color:black;
 }
 .text-white{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1 rem;
   color:white;
 }
 .text-grey{
   color: var(--dg-color);
 }
-.logofolio-organizer h1, .projects h1{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 40px;
 
+
+/* =============================================================================
+   Media query Mobile
+   ========================================================================== */
+@media(min-width: 360px){  
+  .text{
+    /* background: black; */
+    font-size: 2rem;
+    text-align: end;
+    padding: 20px;
+  }
+  .text-grey{
+    font-size: 0.8rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+  .text {
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -45%);
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  .logofolio{
+    background: var(--g-color);
+    display: flex;
+    align-items: center;
+  }
+  .projects{
+    padding: 0 20px;
+    height: 150vh;
+    align-items: center;
+    display: flex;
+  }
+  
+}
+
+/* =============================================================================
+   Media query iPads - Tablets
+   ========================================================================== */
+@media(min-width: 768px){ 
+  .text h1{
+    background: red;
+  }
+  .text{
+    position: relative;
+    top: 45%;
+    transform: translate(0, -45%);
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+/* =============================================================================
+   Media query Desktop
+   ========================================================================== */
+
+@media(min-width: 1024px){ 
+  .text h1{
+    background: green;
+  }
+  .logofolio{
+    /* background: rgba(23,23,23, 0.9); */
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self: center;
+    display: flex;
+  }
+  .logofolio-organizer h1, .projects h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 40px;
+  
+  }
+  .text{
+    position: relative;
+    top: 45%;
+    transform: translate(0, -45%);
+    margin: 0;
+    text-transform: uppercase;
+  }
 }
