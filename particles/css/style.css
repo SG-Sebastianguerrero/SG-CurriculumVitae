@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, p{
   height: 100vh;
   position: relative;
   display: block;
+  border-radius: 15px;
 }
 
 .text h1:hover{
@@ -174,17 +175,24 @@ h1, h2, h3, h4, h5, p{
     text-transform: uppercase;
   }
   .logofolio{
-    background: var(--g-color);
+    height: 80vh;
+    background: white;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   .projects{
-    padding: 0 20px;
+    /* padding: 0 20px; */
     height: 300vh;
     align-items: center;
     display: flex;
   }
-  
+  .logofolio-knowledge h2{
+    padding-top: 20px;
+  }
+  .logofolio-knowledge-images{
+    padding: 20px;
+    width: fit-content;
+  }
 }
 
 /* =============================================================================
