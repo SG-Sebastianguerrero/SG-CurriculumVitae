@@ -175,16 +175,18 @@ h1, h2, h3, h4, h5, p{
     text-transform: uppercase;
   }
   .logofolio{
-    height: 80vh;
+    height: 63vh;
     background: white;
-    display: flex;
     align-items: start;
+    padding-bottom: 100px;
+    position: relative;
+    display: block;
   }
   .projects{
     /* padding: 0 20px; */
     height: 300vh;
     align-items: center;
-    display: flex;
+    display: block;
   }
   .logofolio-knowledge h2{
     padding-top: 20px;
@@ -196,9 +198,9 @@ h1, h2, h3, h4, h5, p{
 }
 
 /* =============================================================================
-   Media query iPads - Tablets
+   Media query iPads - Tablets 768px
    ========================================================================== */
-@media(min-width: 768px){ 
+@media(min-width: 600px){ 
   .text h1{
     background: red;
   }
