@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <!--    particles   -->
     <link rel="stylesheet" href="particles/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>SG-CV</title>  
   </head>
   <body>
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -174,9 +178,25 @@
 
 
 
-<!--     <footer>
-      <h1>Today is your lucky day</h1>
-    </footer> -->
+    <script> 
+      TweenMax.to('.first', 1.5, {
+        delay: .2,
+        left: '-100%',
+        ease: Expo.easeInOut
+      })
+  
+      TweenMax.to('.second', 1.5, {
+        delay: .4,
+        left: '-100%',
+        ease: Expo.easeInOut
+      })
+  
+      TweenMax.to('.third', 1.5, {
+        delay: .6,
+        left: '-100%',
+        ease: Expo.easeInOut
+      })
+    </script>
 
     <script src="popper/popper.min.js"></script>	 	 	  
     <script src="jquery/jquery-3.3.1.min.js"></script>	 	
