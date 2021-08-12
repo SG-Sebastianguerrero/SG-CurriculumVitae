@@ -171,6 +171,17 @@ h1, h2, h3, h4, h5, p{
   color: var(--dg-color);
 }
 
+footer{
+  background: var(--dg-color);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+#footer-list{
+  list-style: none;
+}
 /* =============================================================================
    GSAP ANIMATION
    ========================================================================== */
@@ -212,6 +223,9 @@ h1, h2, h3, h4, h5, p{
     text-align: center;
     justify-content: center;
     border-radius: 15px;
+    /*Gsap animation*/
+    opacity: 0;
+    left: 100%;
   }
   .projects{
     padding: 20px;
@@ -222,6 +236,9 @@ h1, h2, h3, h4, h5, p{
     width: 100%;
     justify-content: center;
     border-radius: 15px;
+    /*Gsap animation*/
+    opacity: 0;
+    left: 100%;
   }
   .logofolio-knowledge h2{
     padding-top: 20px;

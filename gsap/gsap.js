@@ -28,3 +28,18 @@ TweenMax.to('.first', 1.5, {
     left: 0,
     ease: Expo.easeInOut
   })
+
+  
+  TweenMax.to('.logofolio', 1, {
+    delay: 5,
+    opacity: 100,
+    left: 0, 
+    ease: Expo.easeInOut
+  })
+
+  TweenMax.to('.projects', 1, {
+    delay: 6,
+    opacity: 100,
+    left: 0, 
+    ease: Expo.easeInOut
+  })
