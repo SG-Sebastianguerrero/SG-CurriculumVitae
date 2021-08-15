@@ -170,6 +170,19 @@ h1, h2, h3, h4, h5, p{
 .text-grey{
   color: var(--dg-color);
 }
+.card-text_border{
+/*   border: 1px #0dcaf0 solid;
+  color: #0dcaf0; */
+  border: 1px var(--orange-color) solid;
+  color: var(--orange-color);
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.card-text_border:hover{
+ color:white;
+ background: var(--orange-color);
+}
 
 footer{
   background: var(--dg-color);
@@ -230,6 +243,34 @@ footer{
     margin: 0px;
     text-transform: uppercase;
   }
+  .projects{
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-radius: 15px;
+    /*Gsap animation*/
+/*     opacity: 0;
+    left: 100%; */
+  }
+  .founder{
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  #founder-image{
+    width: 100%;
+    max-width: 260px;
+    padding-top: 20px;
+  }
   .logofolio{
     padding-bottom: 10px;
     margin: 20px;
@@ -241,22 +282,10 @@ footer{
     justify-content: center;
     border-radius: 15px;
     /*Gsap animation*/
-    opacity: 0;
-    left: 100%;
+/*     opacity: 0;
+    left: 100%; */
   }
-  .projects{
-    padding: 20px;
-    margin-top: 20px;
-    align-items: center;
-    display: block;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    border-radius: 15px;
-    /*Gsap animation*/
-    opacity: 0;
-    left: 100%;
-  }
+  
   .logofolio-knowledge h2{
     padding-top: 20px;
   }

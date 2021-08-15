@@ -30,7 +30,7 @@ TweenMax.to('.first', 1.5, {
   })
 
   
-  TweenMax.to('.logofolio', 1, {
+/*   TweenMax.to('.logofolio', 1, {
     delay: 5,
     opacity: 100,
     left: 0, 
@@ -42,4 +42,4 @@ TweenMax.to('.first', 1.5, {
     opacity: 100,
     left: 0, 
     ease: Expo.easeInOut
-  })
+  }) */
