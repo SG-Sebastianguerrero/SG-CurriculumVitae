@@ -109,7 +109,6 @@ canvas{
   height: 100%;
   left: 0%;
   z-index: 2;
-  background: #ec1417;
 }
 .first {
   top: 0;
@@ -155,7 +154,11 @@ h1, h2, h3, h4, h5, p{
   height: 100vh;
   border-radius: 15px;
 }
-
+.founder h2{
+  padding: 15px 0px;
+  font-style: oblique;
+  text-transform: uppercase;
+}
 .text h1:hover{
   text-decoration: line-through;
 }
@@ -171,8 +174,6 @@ h1, h2, h3, h4, h5, p{
   color: var(--dg-color);
 }
 .card-text_border{
-/*   border: 1px #0dcaf0 solid;
-  color: #0dcaf0; */
   border: 1px var(--orange-color) solid;
   color: var(--orange-color);
   text-transform: uppercase;
@@ -198,7 +199,7 @@ footer{
   font-size: 40px;
 }
 #footer-items{
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex ;
 }
 #footer-list{
@@ -212,6 +213,16 @@ footer{
 #footer-list h4{
   padding-top: 5px;
 }
+.card{
+  background: white;
+}
+.btn{
+  text-transform: uppercase;
+  font-style: italic;
+}
+#card-text_align{
+  padding-bottom: 25px;
+}   
 /* =============================================================================
    GSAP ANIMATION
    ========================================================================== */
@@ -265,11 +276,12 @@ footer{
     width: 100%;
     justify-content: center;
     border-radius: 15px;
+    background: white;
   }
   #founder-image{
     width: 100%;
     max-width: 260px;
-    padding-top: 20px;
+    padding: 15px;
   }
   .logofolio{
     padding-bottom: 10px;
@@ -303,8 +315,8 @@ footer{
    Media query iPads - Tablets 768px
    ========================================================================== */
 @media(min-width: 600px){ 
-  .text h1{
-    background: red;
+  .text{
+    text-align: right;
   }
   .text{
     position: relative;
@@ -318,8 +330,8 @@ footer{
   }
   .founder{
     width: 100%;
-    display: flex;
-    background: linear-gradient(45deg, white, transparent);
+    display: block;
+    /* background: linear-gradient(45deg, white, transparent); */
     margin: auto 0;
     border-radius: 15px 15px 0 0;
   }
@@ -333,16 +345,16 @@ footer{
    ========================================================================== */
 
 @media(min-width: 1024px){ 
-  .text h1{
-    background: green;
+  .text {
+    text-align: center;
   }
-  .logofolio{
+  .logofolio {
     /* background: rgba(23,23,23, 0.9); */
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
     align-self: center;
     display: flex;
-  }
+}
   .logofolio-organizer h1, .projects h1{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 3.5rem;
@@ -351,6 +363,15 @@ footer{
     padding: 40px;
   
   }
+  .logofolio-knowledge-images{
+    max-height: 150px;
+  }
+  .logofolio-knowledge h2{
+    padding-bottom: 20px;
+  }
+  .carousel-inner{
+/*     height: 500px; */
+  }
   .text{
     position: relative;
     top: 45%;
@@ -358,4 +379,5 @@ footer{
     margin: 0;
     text-transform: uppercase;
   }
+
 }
