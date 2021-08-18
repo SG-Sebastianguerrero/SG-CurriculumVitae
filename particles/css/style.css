@@ -134,7 +134,14 @@ header{
 h1, h2, h3, h4, h5, p{
   font-family: telegraf,-apple-system,BlinkMacSystemFont,Segoe UI;
 }
-
+.nav-link{
+  display: block;
+  padding: .5rem 1rem;
+  color: rgb(252, 249, 249);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
 .navbar-logo{
   height: 50px;
 }

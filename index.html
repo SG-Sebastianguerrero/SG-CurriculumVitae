@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/185b130220.js" crossorigin="anonymous"></script>
     <title>SG-CV</title>  
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNavAltMarkup">
     <div class="overlay first"></div>
     <div class="overlay second"></div>
     <div class="overlay third"></div>
@@ -28,10 +28,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="hero">About me</a>
-              <a class="nav-link" href="#">Knowledge</a>
-              <a class="nav-link" href="#">Projects</a>
-              <a class="nav-link" href="#">Logoteca</a>
+              <a class="nav-link" href="#hero">About me</a>
+              <a class="nav-link" href="#logofolio">Logofolio</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#founder">Founder</a>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
     </header>
 
     <div id="particles-js"></div>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="text"> 
         <h1>Hi i'am <strong>Sebastian Guerrero</strong></h1> <br>
         <h4>Graphic designer & Web developer</h4>
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <section class="logofolio">
+    <section class="logofolio" id="logofolio">
       <div class="logofolio-organizer">
         <div class="logofolio-knowledge">
           <h2>Logofolio & Graphic knowledge</h2>
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <main class="projects">
+    <main class="projects" id="projects">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <h2>Projects</h2>
         <div class="col">
@@ -191,7 +191,7 @@
       </div>
     </main>
     
-    <section class="founder">
+    <section class="founder" id="founder">
       <h2>Founder</h2>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="row g-0">
