@@ -7,6 +7,7 @@
   padding: 0;
   color: inherit;
   font: inherit;
+  /* overflow-x: hidden */
 }
 
 :root{
@@ -271,9 +272,9 @@ footer{
     justify-content: center;
     border-radius: 15px;
     /*Gsap animation*/
-/*     opacity: 0;
-    left: 100%; */
+    opacity: 0%;
   }
+
   .iframe{
     width: 100%;
     height: 400px;
@@ -305,9 +306,6 @@ footer{
     text-align: center;
     justify-content: center;
     border-radius: 15px;
-    /*Gsap animation*/
-/*     opacity: 0;
-    left: 100%; */
   }
   
   .logofolio-knowledge h2{
